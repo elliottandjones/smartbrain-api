@@ -39,12 +39,6 @@ app.listen(process.env.PORT || 3000, () => {
 /profile/:userId --> GET = user
 /image --> PUT --> user
 */
-// bcrypt.compare("eyyyyyybuddy", '$2a$10$agKlkvUTZETSl7zCCwFnWumaFSMZOkhQbdRFRkWZkq0XnTyFLGAhW', function (err, res) {
-  //   console.log('first guess', res);
-  // });
-  // bcrypt.compare("veggies", '$2a$10$agKlkvUTZETSl7zCCwFnWumaFSMZOkhQbdRFRkWZkq0XnTyFLGAhW', function (err, res) {
-  //   console.log('second guess', res);
-  // });
 
 
 // db.select('*').from('users').then((data) => {
