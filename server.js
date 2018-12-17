@@ -19,7 +19,6 @@ const db = knex({
 });
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors());
 // TODO: convert the rest of the routes to the 'signin' format below
@@ -30,8 +29,8 @@ app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) }
 app.put('/image', (req, res) => { image.handleImage(req, res, db) });
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) });
 
-app.listen(PORT, () => {
-  console.log(`app is running on port ${PORT}`);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`app is running on port ${process.env.PORT}`);
 });
 
 /*
