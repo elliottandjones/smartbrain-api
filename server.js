@@ -41,6 +41,8 @@ app.listen(process.env.PORT || 3000, () => {
 */
 
 
-// db.select('*').from('users').then((data) => {
-//   console.log(data);
-// });
+// db.select("*")
+//   .from("users")
+//   .then((data) => {
+//     console.log(data)
+//   })
